@@ -1,5 +1,4 @@
-1.14d Base: 400000
-1.14d Offset: 194159
+1.14d Offset: 194179
 
 OLD CODE:
 
@@ -42,5 +41,3 @@ NEW CODE:
 WHAT TO DO:
 
 Change TEST EAX,EAX to XOR EAX,EAX.
-
-00594179   85C0             TEST EAX,EAX -> 00594179   33C0             XOR EAX,EAX

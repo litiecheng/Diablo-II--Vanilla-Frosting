@@ -1,0 +1,13 @@
+1.14d Offset: 180F54
+
+180F54
+
+OLD:
+00580F54 | 53                       | PUSH EBX                                                       |
+00580F55 | 8B D6                    | MOV EDX,ESI                                                    |
+00580F57 | 8B CF                    | MOV ECX,EDI                                                    |
+00580F59 | E8 52 4B FB FF           | CALL game.535AB0                                               |
+
+NEW:
+
+NOP the four lines above.

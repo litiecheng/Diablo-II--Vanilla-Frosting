@@ -1,0 +1,63 @@
+Search for intermodular calls and look for "PeekMessage".
+You need to find the functions that have the Sleep function in them.
+
+1.14d Offsets: FA66F, 51C31, 51C3B, 51C40
+
+Main Menu
+----------
+
+OLD:
+
+004FA668 | 83 3D 44 DC 72 00 00     | CMP DWORD PTR DS:[72DC44],0                                    |
+004FA66F | 74 02                    | JE game.4FA673                                                 |
+004FA671 | 33 C0                    | XOR EAX,EAX                                                    |
+004FA673 | 50                       | PUSH EAX                                                       |
+004FA674 | FF 15 58 C2 6C 00        | CALL DWORD PTR DS:[<&Sleep>]                                   |
+
+NEW:
+
+004FA668 | 83 3D 44 DC 72 00 00     | CMP DWORD PTR DS:[72DC44],0                                    |
+004FA66F | 90                       | NOP                                                            |
+004FA670 | 90                       | NOP                                                            |
+004FA671 | 90                       | NOP                                                            |
+004FA672 | 90                       | NOP                                                            |
+004FA673 | 50                       | PUSH EAX                                                       |
+004FA674 | FF 15 58 C2 6C 00        | CALL DWORD PTR DS:[<&Sleep>]                                   |
+
+WHAT TO DO:
+
+NOP the JE and XOR.
+
+Single Player, Battle.Net, LAN
+-------------------------------
+
+OLD:
+
+00451C2A | 83 3D E0 F7 70 00 00     | CMP DWORD PTR DS:[70F7E0],0                                    |
+00451C31 | 75 17                    | JNE game.451C4A                                                |
+00451C33 | A1 10 06 7A 00           | MOV EAX,DWORD PTR DS:[7A0610]                                  |
+00451C38 | 83 F8 06                 | CMP EAX,6                                                      |
+00451C3B | 74 0D                    | JE game.451C4A                                                 |
+00451C3D | 83 F8 08                 | CMP EAX,8                                                      |
+00451C40 | 74 08                    | JE game.451C4A                                                 |
+00451C42 | 6A 0A                    | PUSH A                                                         |
+00451C44 | FF 15 58 C2 6C 00        | CALL DWORD PTR DS:[<&Sleep>]                                   |
+
+NEW:
+
+00451C2A | 83 3D E0 F7 70 00 00     | CMP DWORD PTR DS:[70F7E0],0                                    |
+00451C31 | 90                       | NOP                                                            |
+00451C32 | 90                       | NOP                                                            |
+00451C33 | A1 10 06 7A 00           | MOV EAX,DWORD PTR DS:[7A0610]                                  |
+00451C38 | 83 F8 06                 | CMP EAX,6                                                      |
+00451C3B | 90                       | NOP                                                            |
+00451C3C | 90                       | NOP                                                            |
+00451C3D | 83 F8 08                 | CMP EAX,8                                                      |
+00451C40 | 90                       | NOP                                                            |
+00451C41 | 90                       | NOP                                                            |
+00451C42 | 6A 0A                    | PUSH A                                                         |
+00451C44 | FF 15 58 C2 6C 00        | CALL DWORD PTR DS:[<&Sleep>]                                   |
+
+WHAT TO DO:
+
+NOP the JNE/JE/JE.

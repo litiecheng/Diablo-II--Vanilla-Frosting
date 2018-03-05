@@ -1,0 +1,10 @@
+1.14d Offset: F562A
+
+WHAT TO DO:
+
+Change from JE SHORT 0000B6F7 -> JMP SHORT 0000B6F7
+
+HOW TO FIND THE OFFSET:
+
+Search for all reference strings "Only one copy of Diablo II may run at a time."
+Change JE to JMP above.
