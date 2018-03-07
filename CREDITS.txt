@@ -8,7 +8,7 @@ and resources. Without them none of this would be possible.
 
 - devurandom and lolet at PhrozenKeep for helping me with the /players 1 <> /players 8
   experience, life, and item drop calc code.
-  
+
 - devurandom for the code edits collection. I used a bunch of his patches
   as a basis to find the 1.14d equivalents. Also thanks for the improvements
   to my "Disable to Connect to Battle.Net" patch.
@@ -22,10 +22,15 @@ and resources. Without them none of this would be possible.
   rating and damage code which was used to confirm if my previous attack rating/damage
   change works.
   http://d2mods.info/forum/viewtopic.php?f=8&t=63578
-  
+
 - devurandom and GalaXyHaXz for the CPU power fixes.
 
 - Ewok (Xios) for ideas on what can be a good balance for coloring runes/gems.
+
+- Credit goes to devurandom, Cossack, and Kieran for providing the base offsets
+  for finding how to expand the Classic Stash.
+
+  https://d2mods.info/forum/viewtopic.php?f=8&t=63257
 
 The respective communities can be found below:
 

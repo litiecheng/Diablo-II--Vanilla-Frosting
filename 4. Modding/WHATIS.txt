@@ -10,7 +10,7 @@ Game.exe:
     - Ancients level cap removal.
     - Disable connect to Battle.Net
     - Blocking quests are removed (A party member is allowed to access another party member's portal).
-    - Unlimited Respecs
+    - Expanded Classic Stash
 
 Patch_D2.mpq:
     - CharStats.txt - Horadric Cube at Character Creation
@@ -28,11 +28,9 @@ Patch_D2.mpq:
         - Monster resistances are capped at 90%.
     - Runes.txt - Ladder only runewords enabled on Single Player
     - TreasureClassEx.txt:
-        - Improved Rune Drop Rates
-        - Improved TC 84 & 87 Drop Rates
-        - Act Bosses always have Quest Drops and Drop Rates
+        - Improved Rune Drop Rates (Including "Good" Table)
+        - Act Bosses always have quest drops and drop rates
         - Essences and Keys no longer drop
-        - Griswold and Smith Loot Table Fix
         - The Countess and Chests can drop higher runes on each difficulty.
             > Normal (A2+): Up to Sol
             > Nightmare: Up to Ist
@@ -43,6 +41,7 @@ Patch_D2.mpq:
     - invchar.dc6 - Expanded Inventory (Classic)
     - invchar6.dc6 - Expanded Inventory (Expansion)
     - supertransmogrifier.dc6 - Expanded Cube
+    - bank.dc6 - Expanded Stash (Classic)
     - TradeStash.dc6 - Expanded Stash (Expansion)
 
 0. Patches.1337

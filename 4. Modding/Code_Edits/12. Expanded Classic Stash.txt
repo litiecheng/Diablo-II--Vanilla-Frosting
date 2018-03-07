@@ -1,0 +1,61 @@
+1.14d Offsets: 8821E, 88274, 89932, 8F2CB
+
+Gold Amount/Withdraw Button:
+
+0048821E | 74 10                    | JE game.488230                                                 |
+00488220 | 8D BC 06 48 FE FF FF     | LEA EDI,DWORD PTR DS:[ESI+EAX-1B8]                             |
+00488227 | 8D B4 06 4A FE FF FF     | LEA ESI,DWORD PTR DS:[ESI+EAX-1B6]                             |
+0048822E | EB 0E                    | JMP game.48823E                                                |
+00488230 | 8D BC 06 0C FF FF FF     | LEA EDI,DWORD PTR DS:[ESI+EAX-F4]                              |
+00488237 | 8D B4 06 0E FF FF FF     | LEA ESI,DWORD PTR DS:[ESI+EAX-F2]                              |
+
+NOP: 8821E
+
+The 1B8/1B6 and F4/F2 seem to be identical between 1.13c and 1.14d (Coordinates).
+
+
+
+Withdraw Text on Hover:
+
+00488272 | 6A 14                    | PUSH 14                                                        |
+00488274 | 0F 84 02 01 00 00        | JE game.48837C                                                 |
+0048827A | 8D 9C 0A 4A FE FF FF     | LEA EBX,DWORD PTR DS:[EDX+ECX-1B6]                             | ebx:sub_44EFA0
+00488281 | 83 C0 49                 | ADD EAX,49                                                     |
+
+NOP: 88274
+
+The 1B6 is also consistent. The withdraw coordinate is also the same as the withdraw icon from before.
+
+
+
+
+Withdraw Button Event on Click:
+
+Search for 0? 96 00 00 00 (You are looking for a ADD EAX,96, but one that has a "1B6" around which indicates the coordinate).
+
+00489932 | 74 31                    | JE game.489965  |
+
+NOP: 89932
+
+
+
+
+Gold Max/Amount Display:
+
+Search for B? 30 10 00 00 (MOV ECX,1030) and look for an entry that has a ADD EAX,5 / CMP ESI, EAX or something similar.
+
+Once you find this, keep scrolling up, you are gonna pass some entries such as something like:
+
+(Not in this order):
+
+ADD EDX,4E
+ADD ESI,113
+ADD ESI,110
+PUSH 5
+PUSH FFFFFFFF                  
+
+Once you reach the "4E" entry, the next JNE close to it above will be the one you will want to switch to a JMP:
+
+0048F2CB | 75 07                    | JNE game.48F2D4                                                |   
+
+JMP: 8F2CB         
