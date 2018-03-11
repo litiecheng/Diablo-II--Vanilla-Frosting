@@ -1,0 +1,63 @@
+The following code enables 6 affixes on Weapons/Armors/Rings/Amulets
+and 4 affixes on Jewels. The above items will sometimes spawn with more
+or less affixes though since the game modifies the base offset chance
+that I've set. So you might get rare gear with 5 or 7 affixes, or jewels with
+3, 5, or 6 affixes, etc.
+
+
+Offset: 1C1C8C
+
+Force Weapons/Armors/Rings/Amulets to have high affixes:
+
+005C1C8C | B9 C5 90 C6 6A           | MOV ECX,6AC690C5                                               |
+005C1C91 | F7 E1                    | MUL ECX                                                        |
+
+To:
+
+005C1C8C | B9 06 00 00 00           | MOV ECX,6                                                      |
+005C1C91 | EB 1B                    | JMP game.5C1CAE                                                |
+
+Force Jewels to have high affixes:
+
+Offset: 1C1C80
+
+From:
+005C1C80 | E8 FB 05 EB FF           | CALL <game.sub_472280>                                         |
+
+To:
+
+005C1C80 | B8 04 00 00 00           | MOV EAX,4                                                      |
+
+
+
+Remarks:
+
+Search for ADD EAX, 68
+
+find a function that has the following around the area below:
+
+005C1CF0 | 6A 00                    | PUSH 0                                                         |
+005C1CF2 | 52                       | PUSH EDX                                                       |
+005C1CF3 | 6A 00                    | PUSH 0                                                         |
+005C1CF5 | 6A 00                    | PUSH 0                                                         |
+005C1CF7 | 6A 01                    | PUSH 1                                                         |
+005C1CF9 | 6A 01                    | PUSH 1                                                         |
+005C1CFB | 56                       | PUSH ESI                                                       |
+005C1CFC | E8 5F F8 FF FF           | CALL <>                                         |
+
+This function is responsible for the affix.
+
+Some more clues are when you see these lines (not in sequential order):
+
+MOV ECX,6AC690C5 
+CMP EAX,3A
+AND EAX,7
+
+Basically once you find the CMP EAX,3A, the next lines will have a check of JNE and it will jump close
+to the address responsible for the weapon/armor/rings/amulet line.
+
+Once you MOV r32, 6 and then JMP .. you JMP to the address the second statement that takes EDX and assigns it
+to the appropriate location (There will be a CMP/TEST after it).
+
+Jewel code (located closely above the weapon/armor etc code) actually jumps to the line right after the next
+line after the address related to the JMP we made in our change for the weapons/armor/etc (After the jewel code runs).

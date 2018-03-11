@@ -1,6 +1,6 @@
-Vanilla Frosting 15.1.0 [1.14d]
+Vanilla Frosting 15.2.0 [1.14d]
 By Jonathan Vasquez (fearedbliss)
-Released on Tuesday, March 6, 2018
+Released on Sunday, March 11, 2018
 ----------------------------------------
 
 A Diablo II modification tailored to improve the Single Player experience.
@@ -16,21 +16,24 @@ A Diablo II modification tailored to improve the Single Player experience.
 - [Act 3] Ormus now also sells Stamina, Thawing, Antidote, and Keys (Alkor + Hralti).
 
 **** Gameplay Changes ****
-- [From 1.06] Immune monsters are no longer in the game (Other than Enchanted Monsters).
-              Monster resistances are capped at 90%.
-- [From 1.09] The experience penalty after level 70 has been removed.
-- [From 1.09] You will now once again receive experience beyond 2 screens.
-- [From 1.09] Maps have the same size on all difficulties.
-- [From 1.09] You are no longer taxed gold when you die on Nightmare and Hell difficulties.
-- [From 1.09] Blocking quests are removed. A party member can go through another party member's town portal.
-- [From 1.09] Ancients quest reward experience rolls over (Gives you as many levels as it can).
-- [From 1.09] Cows have zero resistances on all difficulties.
+- [Pre 1.07] Immune monsters are no longer in the game (Other than Enchanted Monsters).
+             Monster resistances are capped at 90%.
+- [Pre 1.10] The experience penalty after level 70 has been removed.
+- [Pre 1.10] You will now once again receive experience beyond 2 screens.
+- [Pre 1.10] Maps have the same size on all difficulties.
+- [Pre 1.10] You are no longer taxed gold when you die on Nightmare and Hell difficulties.
+- [Pre 1.10] Blocking quests are removed. A party member can go through another party member's town portal.
+- [Pre 1.10] Ancients quest reward experience rolls over (Gives you as many levels as it can).
+- [Pre 1.10] Cows have zero resistances on all difficulties.
 - You can now open the Cow Level even if you kill the King.
 - Ladder Runewords are now enabled on Single Player.
 - Only three respecs will be allowed per character (One per difficulty).
 - [Recipe] You can now open the Cow Level with just a Town Portal Book.
 - [Recipe] Upgrade a rune by placing: 2x Rune -> Next Rune (up to Zod).
 - [Recipe] Downgrade a rune by placing: Rune + Antidote -> Previous Rune.
+- Rare Items will usually spawn with high affixes.
+  > Weapons/Armors/Rings/Amulets have a base of 6 affixes (Final item could be lower or greater).
+  > Jewels have a base of 4 affixes (Final item could be lower or greater).
 
 **** Drop Balancing ****
 - The default item drop amounts are the same as /players 8.
