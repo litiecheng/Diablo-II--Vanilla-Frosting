@@ -16,8 +16,10 @@ Game.exe:
 Patch_D2.mpq:
     - CharStats.txt - Horadric Cube at Character Creation
     - CubeMain.txt - New Cube Recipes
+    - DifficultyLevels.txt - Pre-1.07 Gambling Rates
     - Experience.txt - Experience Table (Experience Ratio doesn't decrease after 70)
     - Inventory.txt - Stash, Cube, & Inventory Size
+    - ItemRatio.txt - 1.09b Item Ratios
     - LvlMaze.txt - Room Sizes
     - Misc.txt
         - Fara (Act 2) also sells TD/ID/Pots/Keys/Etc
@@ -28,6 +30,7 @@ Patch_D2.mpq:
         - Cows have zero resistances.
         - Monster resistances are capped at 90%.
     - Runes.txt - Ladder only runewords enabled on Single Player
+    - Skills.txt - Remove Skill Timers
     - TreasureClassEx.txt:
         - Improved Rune Drop Rates (Including "Good" Table)
         - Act Bosses always have quest drops and drop rates

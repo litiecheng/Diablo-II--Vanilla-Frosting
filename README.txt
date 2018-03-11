@@ -1,4 +1,4 @@
-Vanilla Frosting 15.2.0 [1.14d]
+Vanilla Frosting 15.3.0 [1.14d]
 By Jonathan Vasquez (fearedbliss)
 Released on Sunday, March 11, 2018
 ----------------------------------------
@@ -18,6 +18,11 @@ A Diablo II modification tailored to improve the Single Player experience.
 **** Gameplay Changes ****
 - [Pre 1.07] Immune monsters are no longer in the game (Other than Enchanted Monsters).
              Monster resistances are capped at 90%.
+- [Pre 1.07] Skill Timers are removed.
+- [Pre 1.07] Gambling rates are back to pre-LOD.
+  > Uniques have a 3% chance to spawn (Up from 0.05%).
+  > Sets have a 5% chance to spawn (Up from 0.10%).
+  > Rares have a 7% chance to spawn (Down from 10%).
 - [Pre 1.10] The experience penalty after level 70 has been removed.
 - [Pre 1.10] You will now once again receive experience beyond 2 screens.
 - [Pre 1.10] Maps have the same size on all difficulties.
@@ -25,13 +30,14 @@ A Diablo II modification tailored to improve the Single Player experience.
 - [Pre 1.10] Blocking quests are removed. A party member can go through another party member's town portal.
 - [Pre 1.10] Ancients quest reward experience rolls over (Gives you as many levels as it can).
 - [Pre 1.10] Cows have zero resistances on all difficulties.
+- [Pre 1.10] Item Ratios are the same as 1.09b.
 - You can now open the Cow Level even if you kill the King.
 - Ladder Runewords are now enabled on Single Player.
 - Only three respecs will be allowed per character (One per difficulty).
 - [Recipe] You can now open the Cow Level with just a Town Portal Book.
 - [Recipe] Upgrade a rune by placing: 2x Rune -> Next Rune (up to Zod).
 - [Recipe] Downgrade a rune by placing: Rune + Antidote -> Previous Rune.
-- Rare Items will usually spawn with high affixes.
+- Rare items will spawn with max affixes.
   > Weapons/Armors/Rings/Amulets have a base of 6 affixes (Final item could be lower or greater).
   > Jewels have a base of 4 affixes (Final item could be lower or greater).
 

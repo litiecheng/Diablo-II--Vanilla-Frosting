@@ -33,6 +33,9 @@ and resources. Without them none of this would be possible.
 
   https://d2mods.info/forum/viewtopic.php?f=8&t=63257
 
+- Credits to Ragnarod for 1.06b Tutorial. Helps with the Gambling Rates Research.
+  https://www.diabloii.net/forums/threads/a-guide-to-classic-1-06b.745320/
+
 The respective communities can be found below:
 
 PhrozenKeep: http://phrozenkeep.hugelaser.com/
