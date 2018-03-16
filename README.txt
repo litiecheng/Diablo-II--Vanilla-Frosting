@@ -1,6 +1,6 @@
-Vanilla Frosting 15.3.0 [1.14d]
+Vanilla Frosting 16.0.0 [1.14d]
 By Jonathan Vasquez (fearedbliss)
-Released on Sunday, March 11, 2018
+Released on Thursday, March 15, 2018
 ----------------------------------------
 
 A Diablo II modification tailored to improve the Single Player experience.
@@ -43,7 +43,14 @@ A Diablo II modification tailored to improve the Single Player experience.
 
 **** Drop Balancing ****
 - The default item drop amounts are the same as /players 8.
+- Improved Weapon/Armor Treasure Class Drop Rates (Doubled).
+  > Weapon/Armor (Equip & Melee) TCs now have a floor of 4.48%
+    chance to drop something from that category (Up from 2.24%).
+  > Bow TCs now have a floor of 3.1% chance to drop something
+    from that category (Up from 1.55%).
 - Improved Rune Drop Rates.
+  > All Runes above Ist have a floor of 0.47% (Same as Ist TC).
+    Before it would exponentially lower down to 0.02% (Zod).
 - Act Bosses always have quest drops and drop rates.
 - The Countess and Chests can now drop higher runes on each difficulty:
   > Normal (A2+): Up to Sol

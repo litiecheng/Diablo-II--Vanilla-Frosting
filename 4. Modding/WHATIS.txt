@@ -32,7 +32,8 @@ Patch_D2.mpq:
     - Runes.txt - Ladder only runewords enabled on Single Player
     - Skills.txt - Remove Skill Timers
     - TreasureClassEx.txt:
-        - Improved Rune Drop Rates (Including "Good" Table)
+        - Improved Weapon/Armor (Melee & Equip) and Bow TC Weights
+        - Improved Rune Drop Weights (Including "Good" Table)
         - Act Bosses always have quest drops and drop rates
         - Essences and Keys no longer drop
         - The Countess and Chests can drop higher runes on each difficulty.
@@ -51,3 +52,7 @@ Patch_D2.mpq:
 0. Patches.1337
     - This file includes all of the patches that were done by hand and recorded
       in the code edits file. You can use x32dbg to apply them all to a clean Game.exe.
+
+VF_TC_Rates.ods
+    - Contains all of the probabilities and calculations for Runes,
+      Weapons, Armors, and Bows, that this mod modifies.
