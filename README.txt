@@ -1,6 +1,6 @@
-Vanilla Frosting 16.0.0 [1.14d]
+Vanilla Frosting 16.0.1 [1.14d]
 By Jonathan Vasquez (fearedbliss)
-Released on Thursday, March 15, 2018
+Released on Saturday, March 17, 2018
 ----------------------------------------
 
 A Diablo II modification tailored to improve the Single Player experience.
@@ -28,6 +28,7 @@ A Diablo II modification tailored to improve the Single Player experience.
 - [Pre 1.10] Maps have the same size on all difficulties.
 - [Pre 1.10] You are no longer taxed gold when you die on Nightmare and Hell difficulties.
 - [Pre 1.10] Blocking quests are removed. A party member can go through another party member's town portal.
+    > You should be able to use this to rush a Level 1 Character to Hell and Power Level them in the Cow Level via a LAN game.
 - [Pre 1.10] Ancients quest reward experience rolls over (Gives you as many levels as it can).
 - [Pre 1.10] Cows have zero resistances on all difficulties.
 - [Pre 1.10] Item Ratios are the same as 1.09b.
@@ -37,9 +38,7 @@ A Diablo II modification tailored to improve the Single Player experience.
 - [Recipe] You can now open the Cow Level with just a Town Portal Book.
 - [Recipe] Upgrade a rune by placing: 2x Rune -> Next Rune (up to Zod).
 - [Recipe] Downgrade a rune by placing: Rune + Antidote -> Previous Rune.
-- Rare items will spawn with max affixes.
-  > Weapons/Armors/Rings/Amulets have a base of 6 affixes (Final item could be lower or greater).
-  > Jewels have a base of 4 affixes (Final item could be lower or greater).
+- Rare items will spawn with max affixes if possible.
 
 **** Drop Balancing ****
 - The default item drop amounts are the same as /players 8.
@@ -60,6 +59,7 @@ A Diablo II modification tailored to improve the Single Player experience.
 
 **** Optimizations ****
 - You can now run multiple clients of Diablo II.
+  > Which means you can use this to: Mule, Rush, and Power Level.
 - You are now able to quickly join LAN games.
 - Fixed CPU usage bug in Game Menus, Single Player, and LAN games.
 - The Battle.net button has been disabled for safety reasons.
