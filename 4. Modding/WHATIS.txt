@@ -1,4 +1,6 @@
 Game.exe:
+    - Expanded Classic Stash
+    - Max Affix Rares
     - Ability to open Cow Level even if King was killed
     - Experience beyond two screens
     - Monster and Chest Item Drop Amounts are the same as /players 8
@@ -6,46 +8,33 @@ Game.exe:
     - CPU Power Reduction
     - Skip Intro Cinematics
     - Hyperjoin (Fast TCP/IP)
-    - You don't lose gold when you die.
-    - Ancients level cap removal.
+    - Ancients level cap removal
     - Disable connect to Battle.Net
-    - Blocking quests are removed (A party member is allowed to access another party member's portal).
-    - Expanded Classic Stash
-    - Max Affix Rares
+    - Blocking quests are removed (A party member is allowed to access another party member's portal)
 
 Patch_D2.mpq:
-    - CharStats.txt - Horadric Cube at Character Creation
     - CubeMain.txt - New Cube Recipes
     - DifficultyLevels.txt - Pre-1.07 Gambling Rates
-    - Experience.txt - Experience Table (Experience Ratio doesn't decrease after 70)
-    - Inventory.txt - Stash, Cube, & Inventory Size
+    - Experience.txt - Experience Ratio doesn't decrease after Level 70
+    - Inventory.txt - Stash Size
     - ItemRatio.txt - 1.09b Item Ratios
     - LvlMaze.txt - Room Sizes
-    - Misc.txt
-        - Fara (Act 2) also sells TD/ID/Pots/Keys/Etc
-        - Ormus (Act 3) now also sells Stamina/Thawing/Antidote Potions and Keys.
-        - Arrows/Bolts stack up to 500.
-        - TP/ID Books and Keys stack up to 100.
     - MonStats.txt:
         - Cows have zero resistances.
         - Monster resistances are capped at 90%.
     - Runes.txt - Ladder only runewords enabled on Single Player
-    - Skills.txt - Remove Skill Timers
     - TreasureClassEx.txt:
         - Improved Weapon/Armor (Melee & Equip) and Bow TC Weights
         - Improved Rune Drop Weights (Including "Good" Table)
         - Act Bosses always have quest drops and drop rates
         - Essences and Keys no longer drop
-        - The Countess and Chests can drop higher runes on each difficulty.
+        - Chests can drop higher runes on each difficulty.
             > Normal (A2+): Up to Sol
             > Nightmare: Up to Ist
             > Hell: Up to Zod
-    - string.tbl (English)
-        - Gems and Skulls are now colored Dark Green.
-    - gameselectscreenEXP-0010-LOD.dc6 - VF version addition to main screen
-    - invchar.dc6 - Expanded Inventory (Classic)
-    - invchar6.dc6 - Expanded Inventory (Expansion)
-    - supertransmogrifier.dc6 - Expanded Cube
+
+    Graphical Changes:
+    - gameselectscreenEXP-0010-LOD.dc6 - VF Version (Main Screen)
     - bank.dc6 - Expanded Stash (Classic)
     - TradeStash.dc6 - Expanded Stash (Expansion)
 
